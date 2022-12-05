@@ -11,6 +11,7 @@
 makebash () {
     shc -f $2 -o $1
     rm ./$2.x.c
+    chmod 755 ./$2
     mv $1 /usr/bin
 }
 
